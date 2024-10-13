@@ -56,6 +56,8 @@ export default function Navbar({ setShowSidebar, showSidebar }) {
               </div>
             </button>
           </DropdownMenuTrigger>
+
+          
           <DropdownMenuContent className="py-2 px-4 pr-8">
             <DropdownMenuLabel>Notifications</DropdownMenuLabel>
             <DropdownMenuSeparator />
