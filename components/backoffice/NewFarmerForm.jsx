@@ -40,7 +40,7 @@ export default function NewFarmerForm({ user }) {
   async function onSubmit(data) {
     const code = generateUserCode("LFF", data.name);
     data.code = code;
-    data.userId = user.id;
+    data.userId = user?.id;
     data.products = products;
     data.profileImageUrl = imageUrl;
     console.log(data);
