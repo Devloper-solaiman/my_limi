@@ -1,7 +1,4 @@
 "use client";
-import { BaggageClaim } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -25,27 +22,30 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
     },
   };
   return (
-    <Carousel
-      swipeable={false}
-      draggable={false}
-      showDots={true}
-      responsive={responsive}
-      ssr={true} // means to render carousel on server-side.
-      infinite={true}
-      autoPlay={true}
-      autoPlaySpeed={5000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={1000}
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      // deviceType={}
-      dotListClass="custom-dot-list-style"
-      itemClass="px-4"
-    >
-      {products.map((product, i) => {
-        return <Product product={product} key={i} />;
-      })}
-    </Carousel>
+    <div>
+      <h1>go</h1>
+    </div>
+    // <Carousel
+    //   swipeable={false}
+    //   draggable={false}
+    //   showDots={true}
+    //   responsive={responsive}
+    //   ssr={true} // means to render carousel on server-side.
+    //   infinite={true}
+    //   autoPlay={true}
+    //   autoPlaySpeed={5000}
+    //   keyBoardControl={true}
+    //   customTransition="all .5"
+    //   transitionDuration={1000}
+    //   containerClass="carousel-container"
+    //   removeArrowOnDeviceType={["tablet", "mobile"]}
+    //   // deviceType={}
+    //   dotListClass="custom-dot-list-style"
+    //   itemClass="px-4"
+    // >
+    //   {products.map((product, i) => {
+    //     return <Product product={product} key={i} />;
+    //   })}
+    // </Carousel>
   );
 }
