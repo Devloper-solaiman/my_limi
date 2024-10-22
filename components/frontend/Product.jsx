@@ -14,17 +14,25 @@ export default function Product({ product }) {
     dispatch(addToCart(product));
     toast.success("Item added Successfully");
   }
+  console.log(product.imageUrl)
   return (
     <div className="rounded-lg mr-3  bg-white dark:bg-slate-900 overflow-hidden border shadow">
-      {/* <Link href={`/products/${product.slug}`}>
-        <Image
-          src={product.imageUrl}
-          alt={product.title}
-          width={556}
-          height={556}
-          className="w-full h-48 object-cover"
-        />
-      </Link> */}
+
+      <Link href={`/products/${product.slug}`}>
+      {product.imageUrl ? (
+  <Image
+    src={product.imageUrl}
+    alt={product.title}
+    width={556}
+    height={556}
+    className="w-full h-48 object-cover"
+  />
+) : (
+  <div className="w-full h-48 flex items-center justify-center bg-gray-200">
+    <span className="text-xl font-bold text-red-500">IMP</span>
+  </div>
+)}
+      </Link>
       <div className="px-4">
         <Link href={`/products/${product.slug}`}>
           <h2 className="text-center dark:text-slate-200 text-slate-800 my-2 font-semibold">
