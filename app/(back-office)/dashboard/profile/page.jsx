@@ -9,8 +9,7 @@ export default async function page() {
   const { user } = session;
   return (
     <div>
-      <h2 className="text-center font-semibold mt-32">Welcome {user?.name} </h2> 
-      <h1>{user?.email}</h1>
+      <h2>Welcome {user?.name} </h2>
     </div>
   );
 }
