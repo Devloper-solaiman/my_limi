@@ -1,4 +1,7 @@
 "use client";
+import { BaggageClaim } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -23,7 +26,7 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
   };
   return (
     <div>
-      <h1>go</h1>
+      <h1 className="text-gray-400">work in progress</h1>
     </div>
     // <Carousel
     //   swipeable={false}
