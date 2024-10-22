@@ -25,30 +25,27 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
     },
   };
   return (
-    <div>
-      <h1 className="text-gray-400">work in progress</h1>
-    </div>
-    // <Carousel
-    //   swipeable={false}
-    //   draggable={false}
-    //   showDots={true}
-    //   responsive={responsive}
-    //   ssr={true} // means to render carousel on server-side.
-    //   infinite={true}
-    //   autoPlay={true}
-    //   autoPlaySpeed={5000}
-    //   keyBoardControl={true}
-    //   customTransition="all .5"
-    //   transitionDuration={1000}
-    //   containerClass="carousel-container"
-    //   removeArrowOnDeviceType={["tablet", "mobile"]}
-    //   // deviceType={}
-    //   dotListClass="custom-dot-list-style"
-    //   itemClass="px-4"
-    // >
-    //   {products.map((product, i) => {
-    //     return <Product product={product} key={i} />;
-    //   })}
-    // </Carousel>
+    <Carousel
+      swipeable={false}
+      draggable={false}
+      showDots={true}
+      responsive={responsive}
+      ssr={true} // means to render carousel on server-side.
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={5000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={1000}
+      containerClass="carousel-container"
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      // deviceType={}
+      dotListClass="custom-dot-list-style"
+      itemClass="px-4"
+    >
+      {products.map((product, i) => {
+        return <Product product={product} key={i} />;
+      })}
+    </Carousel>
   );
 }
